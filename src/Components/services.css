@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between rows */
+  }
+  
+  .part {
+    flex: 0 0 calc(33.333% - 20px); /* Adjust width for three cards per row with spacing */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Ensure padding is included in the width */
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h3 {
+    margin: 10px 0;
+    color: aliceblue;
+  }
+  
+  p {
+    margin: 0;
+    color: rgb(104, 106, 107);
+    font-size: 18px;
+  }
+
+  

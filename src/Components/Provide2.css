@@ -1,0 +1,36 @@
+.scrolling-background {
+    background-image: url('../Assets/bg6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* This ensures the background image remains fixed while the content scrolls */
+    height: 60vh; /* Full viewport height */
+    position: relative; /* To position the text over the image */
+    z-index: 1;
+    width:100% /* To ensure the text is above the image */
+  }
+  
+  .scrolling-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white overlay */
+    z-index: -1; /* Behind the text */
+  }
+  
+  .scrolling-background h1 {
+    position: absolute;
+    top: 50%; /* Centers the text vertically */
+    left: 50%; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the position based on the text size */
+    z-index: 1; /* Above the transparent overlay */
+  }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
